@@ -102,7 +102,7 @@ The twin then manages tasks, mimics your tone, and even preserves your legacy fo
 
 ```bash
 # Clone the repo
-git clone https://github.com/your-username/lifetwin.git
+git clone https://github.com/ASHU191/Life-Twin-AI-Companion
 
 # Install dependencies
 cd lifetwin && npm install
