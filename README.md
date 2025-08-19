@@ -1,73 +1,111 @@
-# Welcome to your Lovable project
+# 🧬 LifeTwin – Your Digital Twin SaaS
 
-## Project info
+> Build your **AI-powered digital twin** that thinks, talks, and plans like you.  
+A futuristic SaaS app where users create their own **Digital Twin** by feeding personal data (schedule, habits, preferences, thoughts, goals).  
+The twin then manages tasks, mimics your tone, and even preserves your legacy for the future. 🚀
 
-**URL**: https://lovable.dev/projects/59a71d97-5816-4090-bdaa-6bda218e45bf
+---
 
-## How can I edit this code?
+## ✨ Features
 
-There are several ways of editing your application.
+### Core (Free Plan)
+- 🔹 AI-powered **Digital Twin Chatbot** (mimics user’s style)  
+- 🔹 Personal **Task Manager & Calendar Sync**  
+- 🔹 Habit tracking & lifestyle insights  
+- 🔹 Secure journaling with mood analysis  
 
-**Use Lovable**
+### Premium (Pro/Enterprise)
+- 📨 AI handles **email & message replies** in your tone  
+- 🗂️ Multi-workspace & team collaboration  
+- 🔮 **Legacy Mode** → Save future messages & memories  
+- 📊 Advanced productivity & emotional analytics  
+- 🔗 Integrations (Google Calendar, Outlook, Notion)  
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/59a71d97-5816-4090-bdaa-6bda218e45bf) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🏗️ System Architecture
 
-**Use your preferred IDE**
+**Tech Stack:**
+- Frontend → [Next.js 15](https://nextjs.org/) + TypeScript + Tailwind CSS  
+- Database → Supabase (PostgreSQL)  
+- Auth → Clerk / NextAuth.js  
+- AI Engine → OpenAI / LLM APIs  
+- APIs → Calendar & Email Integrations  
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+---
 
-Follow these steps:
+## 🗄️ Database Schema
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+| Table              | Description                                   |
+|--------------------|-----------------------------------------------|
+| **Users**          | Core user info (auth, plan, subscription)     |
+| **Profiles**       | Extended profile (bio, tone, habits)          |
+| **Preferences**    | Settings for twin personality & AI behavior   |
+| **JournalEntries** | Daily logs, emotions, notes                   |
+| **Tasks**          | To-dos, reminders, productivity items         |
+| **CalendarEvents** | Synced meetings/events                        |
+| **TwinPersonality**| Vectorized tone/personality data              |
+| **Messages**       | Legacy mode messages for future delivery      |
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+---
 
-# Step 3: Install the necessary dependencies.
-npm i
+## 🎨 Frontend UI/UX
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+- **Onboarding Wizard** → Profile setup → Twin creation  
+- **Dashboard Widgets:**  
+  - 🤖 Digital Twin Chat  
+  - 🗓️ Calendar & Tasks  
+  - 📔 Journal & Mood Graphs  
+  - 📊 Reports & Analytics  
+
+💡 *Tailwind UI Design* → Glassmorphism + soft gradients + modern SaaS cards.
+
+---
+
+## 🤖 AI Integration
+
+- Personality mimicry via fine-tuned prompts:  
+  - Example → `"Respond like Arsalan: short, casual, motivational tone."`  
+- Context-aware replies using conversation history from DB  
+- AI-powered scheduling & lifestyle suggestions  
+
+---
+
+## 💰 Monetization Model
+
+| Plan        | Features |
+|-------------|----------|
+| **Free**    | Basic twin, journaling, limited tasks |
+| **Pro**     | AI email replies, legacy mode, analytics |
+| **Enterprise** | Team workspaces, integrations, AR/VR twin |
+
+---
+
+## 🔒 Scalability & Security
+
+- Multi-tenant DB (row-level security in Supabase)  
+- Encryption for personal/legacy data  
+- Optimized LLM requests via caching & batching  
+
+---
+
+## 🚀 Future Roadmap (2026–27 Vision)
+
+- 🕶️ AR/VR **Avatar Integration**  
+- 🎙️ Voice-based AI twin interactions  
+- ⚰️ **Afterlife Mode** – your twin lives on digitally  
+
+---
+
+## 🛠️ Local Development
+
+```bash
+# Clone the repo
+git clone https://github.com/your-username/lifetwin.git
+
+# Install dependencies
+cd lifetwin && npm install
+
+# Run dev server
 npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/59a71d97-5816-4090-bdaa-6bda218e45bf) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
