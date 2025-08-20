@@ -1,5 +1,5 @@
 # 🧬 LifeTwin – Your Digital Twin SaaS
-
+           
 > Build your **AI-powered digital twin** that thinks, talks, and plans like you.  
 A futuristic SaaS app where users create their own **Digital Twin** by feeding personal data (schedule, habits, preferences, thoughts, goals).  
 The twin then manages tasks, mimics your tone, and even preserves your legacy for the future. 🚀
