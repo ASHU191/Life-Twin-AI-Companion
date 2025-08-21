@@ -5,7 +5,7 @@ A futuristic SaaS app where users create their own **Digital Twin** by feeding p
 The twin then manages tasks, mimics your tone, and even preserves your legacy for the future. 🚀
 
 ---
-
+      
 ## ✨ Features
 
 ### Core (Free Plan)
