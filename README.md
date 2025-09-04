@@ -7,7 +7,7 @@ The twin then manages tasks, mimics your tone, and even preserves your legacy fo
 ---
       
 ## ✨ Features
-
+        
 ### Core (Free Plan)
 - 🔹 AI-powered **Digital Twin Chatbot** (mimics user’s style)  
 - 🔹 Personal **Task Manager & Calendar Sync**  
